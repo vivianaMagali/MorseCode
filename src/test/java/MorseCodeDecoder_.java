@@ -8,6 +8,9 @@ public class MorseCodeDecoder_ {
     @Test
     public void signsValid(){
         assertTrue(MorseCodeDecoder.signsValid("."));
+        assertFalse(MorseCodeDecoder.signsValid("?"));
     }
+
+
 
 }

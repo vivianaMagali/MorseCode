@@ -2,10 +2,14 @@
 
 public class MorseCodeDecoder {
 
-    public static boolean signsValid(String morseCode){
-        if(morseCode=="."){
+    public static Boolean signsValid(String morseCode){
+        String signValid=MorseCode.get(morseCode);
+        if(signValid!=null){
             return true;
         }
         return false;
     }
+    
+
+
 }
