@@ -11,6 +11,11 @@ public class MorseCodeDecoder_ {
         assertFalse(MorseCodeDecoder.signsValid("?"));
     }
 
+    @Test
+    public void decodeGoodMorseCode(){
+
+        assertEquals(MorseCodeDecoder.decode(".... . -.--   .--- ..- -.. ."), "HEY JUDE");
+    }
 
 
 }

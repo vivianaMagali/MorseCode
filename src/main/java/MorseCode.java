@@ -64,11 +64,12 @@ public class MorseCode {
     }};
 
     public static String get(String morseCode){
-        return MorseCode.Morse.get(morseCode);
+        return Morse.get(morseCode);
     }
 
+
     public static void main(String[] args) {
-        System.out.println(MorseCode.Morse.get("...---..."));
+        System.out.println(Morse.get("...---..."));
     }
 
 }
